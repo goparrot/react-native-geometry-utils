@@ -10,8 +10,22 @@ RCT_EXTERN_METHOD(
 )
 
 RCT_EXTERN_METHOD(
-  containsLocation:(NSDictionary *)point
+  polygonContainsLocation:(NSDictionary *)point
   polygon:(NSArray *)polygon
+  withResolver:(RCTPromiseResolveBlock)resolve
+  withRejecter:(RCTPromiseRejectBlock)reject
+)
+
+RCT_EXTERN_METHOD(
+  circleContainsLocation:(NSDictionary *)point
+  circle:(NSDictionary *)circle
+  withResolver:(RCTPromiseResolveBlock)resolve
+  withRejecter:(RCTPromiseRejectBlock)reject
+)
+
+RCT_EXTERN_METHOD(
+  computeDistanceBetween:(NSDictionary *)from
+  to:(NSDictionary *)to
   withResolver:(RCTPromiseResolveBlock)resolve
   withRejecter:(RCTPromiseRejectBlock)reject
 )

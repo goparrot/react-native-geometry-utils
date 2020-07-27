@@ -5,11 +5,22 @@ export interface LatLng {
   longitude: number;
 }
 
+export interface Circle {
+  center: LatLng;
+  radius: number;
+}
+
 type GeometryUtilsType = {
-  multiply(a: number, b: number): Promise<number>;
-  containsLocation(point: LatLng, polygon: LatLng[]): Promise<boolean>;
+  polygonContainsLocation(point: LatLng, polygon: LatLng[]): Promise<boolean>;
+  circleContainsLocation(point: LatLng, circle: Circle): Promise<boolean>;
+  computeDistanceBetween(from: LatLng, to: LatLng): Promise<number>;
 };
 
-const { GPRNGeometryUtils } = NativeModules;
+const GPRNGeometryUtils: GeometryUtilsType = NativeModules.GPRNGeometryUtils;
 
-export default GPRNGeometryUtils as GeometryUtilsType;
+export const polygonContainsLocation =
+  GPRNGeometryUtils.polygonContainsLocation;
+export const circleContainsLocation = GPRNGeometryUtils.circleContainsLocation;
+export const computeDistanceBetween = GPRNGeometryUtils.computeDistanceBetween;
+
+export default GPRNGeometryUtils;

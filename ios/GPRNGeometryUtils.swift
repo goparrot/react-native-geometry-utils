@@ -27,11 +27,9 @@ class GPRNGeometryUtils: NSObject {
       )
     }
 
-    if GMSGeometryContainsLocation(locationPoint, polygonPath as GMSPath, false) {
-      resolve(true)
-    } else {
-      resolve(false)
-    }
+    let isWithinCoverage = GMSGeometryContainsLocation(locationPoint, polygonPath as GMSPath, false)
+
+    resolve(isWithinCoverage)
 
     // let loc1 = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
     // let loc2 = CLLocationCoordinate2D(latitude: -31.86, longitude: 150.20)

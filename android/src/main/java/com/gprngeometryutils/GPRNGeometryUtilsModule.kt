@@ -44,7 +44,7 @@ class GPRNGeometryUtilsModule(reactContext: ReactApplicationContext) : ReactCont
       polygonList.add(
         LatLng(
           vertex?.getDouble("latitude") ?: 0.0,
-          vertex?.getDouble("latitude") ?: 0.0
+          vertex?.getDouble("longitude") ?: 0.0
         )
       )
     }

@@ -4,6 +4,6 @@ type GeometryUtilsType = {
   multiply(a: number, b: number): Promise<number>;
 };
 
-const { GeometryUtils } = NativeModules;
+const { GPRNGeometryUtils } = NativeModules;
 
-export default GeometryUtils as GeometryUtilsType;
+export default GPRNGeometryUtils as GeometryUtilsType;

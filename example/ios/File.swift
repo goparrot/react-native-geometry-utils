@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  GeometryUtilsExample
+//  GPRNGeometryUtilsExample
 //
 
 import Foundation

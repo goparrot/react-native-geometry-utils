@@ -1,6 +1,6 @@
-rootProject.name = 'GeometryUtilsExample'
+rootProject.name = 'GPRNGeometryUtilsExample'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
 
-include ':reactnativegeometryutils'
-project(':reactnativegeometryutils').projectDir = new File(rootProject.projectDir, '../../android')
+include ':gprngeometryutils'
+project(':gprngeometryutils').projectDir = new File(rootProject.projectDir, '../../android')

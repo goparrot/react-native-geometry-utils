@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import GeometryUtils from 'react-native-geometry-utils';
+import GPRNGeometryUtils from '@goparrot/react-native-geometry-utils';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    GeometryUtils.multiply(3, 7).then(setResult);
+    GPRNGeometryUtils.multiply(3, 7).then(setResult);
   }, []);
 
   return (

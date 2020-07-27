@@ -1,4 +1,4 @@
-package com.example.reactnativegeometryutils;
+package com.example.gprngeometryutils;
 
 import android.app.Application;
 import android.content.Context;
@@ -11,7 +11,7 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
-import com.reactnativegeometryutils.GeometryUtilsPackage;
+import com.gprngeometryutils.GPRNGeometryUtilsPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -26,9 +26,9 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
           @SuppressWarnings("UnnecessaryLocalVariable")
           List<ReactPackage> packages = new PackageList(this).getPackages();
-          // Packages that cannot be autolinked yet can be added manually here, for GeometryUtilsExample:
+          // Packages that cannot be autolinked yet can be added manually here, for GPRNGeometryUtilsExample:
           // packages.add(new MyReactNativePackage());
-          packages.add(new GeometryUtilsPackage());
+          packages.add(new GPRNGeometryUtilsPackage());
 
           return packages;
         }
@@ -63,7 +63,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.reactnativegeometryutilsExample.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.gprngeometryutilsExample.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

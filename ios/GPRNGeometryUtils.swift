@@ -1,5 +1,5 @@
-@objc(GeometryUtils)
-class GeometryUtils: NSObject {
+@objc(GPRNGeometryUtils)
+class GPRNGeometryUtils: NSObject {
 
     @objc(multiply:withB:withResolver:withRejecter:)
     func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {

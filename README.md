@@ -1,17 +1,17 @@
-# react-native-geometry-utils
+# @goparrot/react-native-geometry-utils
 
 Google maps geometry utils for react native
 
 ## Installation
 
 ```sh
-npm install react-native-geometry-utils
+npm install @goparrot/react-native-geometry-utils
 ```
 
 ## Usage
 
 ```js
-import GeometryUtils from "react-native-geometry-utils";
+import GeometryUtils from "@goparrot/react-native-geometry-utils";
 
 // ...
 

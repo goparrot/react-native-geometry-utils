@@ -1,14 +1,14 @@
-package com.reactnativegeometryutils
+package com.gprngeometryutils
 
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.Promise
 
-class GeometryUtilsModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+class GPRNGeometryUtilsModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
     override fun getName(): String {
-        return "GeometryUtils"
+        return "GPRNGeometryUtils"
     }
 
     // Example method

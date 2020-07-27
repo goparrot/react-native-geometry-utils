@@ -67,7 +67,13 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
+  - GoogleMaps (3.9.0):
+    - GoogleMaps/Maps (= 3.9.0)
+  - GoogleMaps/Base (3.9.0)
+  - GoogleMaps/Maps (3.9.0):
+    - GoogleMaps/Base
   - goparrot-react-native-geometry-utils (0.1.0):
+    - GoogleMaps
     - React
   - OpenSSL-Universal (1.0.2.19):
     - OpenSSL-Universal/Static (= 1.0.2.19)
@@ -322,6 +328,7 @@ SPEC REPOS:
     - Flipper-PeerTalk
     - Flipper-RSocket
     - FlipperKit
+    - GoogleMaps
     - OpenSSL-Universal
     - YogaKit
 
@@ -395,7 +402,8 @@ SPEC CHECKSUMS:
   FlipperKit: 6dc9b8f4ef60d9e5ded7f0264db299c91f18832e
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
-  goparrot-react-native-geometry-utils: f94b9427b15e781aecb1b4b993aa5e73cd81ca17
+  GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
+  goparrot-react-native-geometry-utils: 9b47e84add964be54bf2fa1e5e62dd17bec9b1e6
   OpenSSL-Universal: 8b48cc0d10c1b2923617dfe5c178aa9ed2689355
   RCTRequired: b153add4da6e7dbc44aebf93f3cf4fcae392ddf1
   RCTTypeSafety: 9aa1b91d7f9310fc6eadc3cf95126ffe818af320

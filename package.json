@@ -1,6 +1,6 @@
 {
   "name": "@goparrot/react-native-geometry-utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Google maps geometry utils for react native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -108,6 +108,10 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   }
 }

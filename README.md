@@ -2,6 +2,8 @@
 
 Google maps geometry utils for react native
 
+> This library is a clone of [react-native-geo-fencing](https://github.com/surialabs/react-native-geo-fencing) with several improvements.
+
 ## Installation
 
 ```sh
@@ -50,6 +52,32 @@ await polygonContainsLocation(pointOut, polygon); // false
 await circleContainsLocation(pointIn, cicle); // true
 await circleContainsLocation(pointOut, cicle); // false
 await computeDistanceBetween(pointIn, pointOut); // 35162.86 meters
+```
+
+## API
+
+### Interfaces
+
+```ts
+interface LatLng {
+  latitude: number;
+  longitude: number;
+}
+
+interface Circle {
+  center: LatLng;
+  radius: number;
+}
+```
+
+### Functions
+
+```ts
+polygonContainsLocation(point: LatLng, polygon: LatLng[]): Promise<boolean>;
+
+circleContainsLocation(point: LatLng, circle: Circle): Promise<boolean>;
+
+computeDistanceBetween(from: LatLng, to: LatLng): Promise<number>;
 ```
 
 ## Contributing

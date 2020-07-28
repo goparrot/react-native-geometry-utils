@@ -4,6 +4,16 @@ Google maps geometry utils for react native
 
 > This library is a clone of [react-native-geo-fencing](https://github.com/surialabs/react-native-geo-fencing) with several improvements.
 
+## Pre-install
+
+Native module for iOS is written in Swift.
+
+> If your app project does not contain any Swift code, a workaround can be a single empty .swift file and an empty bridging header.
+
+You may try [react-native-swift](https://github.com/rhdeck/react-native-swift).
+
+_If you had problems installing this package for iOS and found some solutions please create an issue or a PR that updates the README._
+
 ## Installation
 
 ```sh
